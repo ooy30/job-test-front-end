@@ -1,1 +1,14 @@
-<p>test5 works!</p>
+<form [formGroup]="fromData">
+  <div class="row">
+    <div class="col-lg-2 text-right">
+      <label>Number </label>
+    </div>
+    <div class="col-lg-4">
+      <input (ngModelChange)="drawn()" type="number" formControlName="number" />
+    </div>
+  </div>
+</form>
+
+<div class="show-data" *ngIf="number > 0">
+  <p class="text-center" *ngFor="let item of show">{{item}}</p>
+</div>

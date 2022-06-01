@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],exports: [
-    NzLayoutModule
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class ShareModule { }

@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'hero', pathMatch: 'full' },
   {
     path: '',
-    component: AppComponent,
+    // component: AppComponent,
     children: [
         {
             path: 'hero',

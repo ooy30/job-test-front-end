@@ -1,1 +1,28 @@
-<p>test4 works!</p>
+<form [formGroup]="fromData">
+  <div class="row">
+    <div class="col-lg-2 text-right">
+      <label>citizen_id </label>
+    </div>
+    <div class="col-lg-10">
+      <input class="w-100" type="text" formControlName="citizen_id" />
+    </div>
+
+    <div class="col-lg-12 mt-5 text-center">
+      <button type="button" class="btn btn-outline-primary w-25" (click)="checkCitizenId()">
+      {{status}}
+    </button>
+    </div>
+  </div>
+</form>
+
+<div class="mt-3">
+  <h4>Input</h4>
+  <div class="border">
+    {{ input | json }}
+  </div>
+
+  <h4>Output</h4>
+  <div class="border">
+    {{ output | json }}
+  </div>
+</div>

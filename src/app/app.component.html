@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-3">
+      <ul class="list-group">
+        <li class="list-group-item" [routerLink]="'/hero'" routerLinkActive="classActive">Test 1</li>
+        <li class="list-group-item"  [routerLink]="'/test2'" routerLinkActive="classActive">Test 2</li>
+        <li class="list-group-item"  [routerLink]="'/test3'" routerLinkActive="classActive">Test 3</li>
+        <li class="list-group-item"  [routerLink]="'/test4'" routerLinkActive="classActive">Test 4</li>
+        <li class="list-group-item"  [routerLink]="'/test5'" routerLinkActive="classActive">Test 5</li>
+      </ul>
+    </div>
+    <div class="col-lg-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
